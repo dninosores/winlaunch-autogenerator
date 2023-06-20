@@ -13,6 +13,7 @@ import re
 # in the same directory as another program, or of the form "uninstall.*PROGRAMNAME") (default true)
 # 4. Whether to replace current configuration or add to it (use hashes to figure out if a link is already present)
 # Whether to exclude the startup folder
+# 5. Regex to exclude certain file patterns
 
 CONFIG_LOC = pathlib.Path(os.getenv("APPDATA", "")).joinpath("WinLaunch")
 LOCAL_STARTMENU = pathlib.Path(os.getenv("APPDATA", "")).joinpath(
